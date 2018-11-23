@@ -5,7 +5,7 @@ and offers multiple selection options such as Genre, Release Year, and IMDb rati
 
 Written by: u/thatswhereurwrongkiddo on github
 
-Last Updated: 11.23.2018 at
+Last Updated: 11.23.2018 at 11:58am
 """
 
 import sqlite3
