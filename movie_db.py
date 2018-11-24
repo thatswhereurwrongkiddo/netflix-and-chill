@@ -1,11 +1,11 @@
 """
-Welcome to the source code for 'Netflix and Chill' v1.0.1
-This is a program that pulls movie information from a basic 10 movie SEQueL database
+Welcome to the source code for 'Netflix and Chill' v1.0.1b2
+This is a program that pulls movie information from a basic 20 movie SEQueL database
 and offers multiple selection options such as Genre, Release Year, and IMDb rating.
 
 Written by: u/thatswhereurwrongkiddo on github
 
-Last Updated: 11.23.2018 at
+Last Updated: 11.24.2018
 """
 
 import sqlite3
@@ -18,7 +18,7 @@ connection = sqlite3.connect("movie_db.db")
 
 cursor = connection.cursor()
 
-print("""Welcome to Netflix and Chill v1.0.1
+print("""Welcome to Netflix and Chill v1.0.1b2
 
 Designed with love by github user thatswhereurwrongkiddo
 """)
@@ -38,7 +38,7 @@ os.system('cls')
 
 if db_selection == ('1'):
 
-    print("Which genre would you like to watch? (Be sure to capitalize genre, i.e. 'Comedy')")
+    print("Which genre would you like to watch?")
     print("""
 Genre List:
 
