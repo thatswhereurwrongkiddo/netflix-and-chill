@@ -5,7 +5,7 @@ and offers multiple selection options such as Genre, Release Year, and IMDb rati
 
 Written by: u/thatswhereurwrongkiddo on github
 
-Last Updated: 11.23.2018 at 11:58am
+Last Updated: 11.23.2018 at
 """
 
 import sqlite3
@@ -84,8 +84,8 @@ elif db_selection == ('2'):
     print("""How would you like to select your movie?
 
     By specific release year? (1)
-    By release date after specific year (i.e. Movies released after 2010) (2)
-    By release date before specific year (i.e. Movies released before 2010) (3)
+    By release date before specific year (i.e. Movies released after 2010) (2)
+    By release date after specific year (i.e. Movies released before 2010) (3)
 
     """)
 
