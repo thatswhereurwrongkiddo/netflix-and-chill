@@ -26,7 +26,7 @@
 #FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 #DEALINGS IN THE SOFTWARE.
 #
-#Last file update on 01.04.2019
+#Last file update on 01.06.2019
 
 #Netflix & Chill
 #version 1.1b
@@ -45,6 +45,13 @@ __license__ = 'MIT'
 __copyright__ = 'Copyright 2018-2019 thatswhereurwrongkiddo'
 __version__ = '1.1b'
 
+
+print("Program Title: {0}".format(__title__))
+print("Author: {0}".format(__author__))
+print("License: {0}".format(__license__))
+print("Copyright info: {0}".format(__copyright__))
+print("Program Version: {0}".format(__version__))
+input()
 #that's all for now
 #thank you for reading
 #goodbye!
