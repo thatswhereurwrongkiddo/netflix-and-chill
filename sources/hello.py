@@ -26,9 +26,11 @@
 #FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 #DEALINGS IN THE SOFTWARE.
 #
-#Last file update on 01.04.2019
+#Last file update on 01.06.2019
 
 import os
+from splash import cursor
+import time
 
 print("""Welcome to Netflix and Chill v1.0.2
 
