@@ -1,6 +1,6 @@
 # Netflix and Chill v1.1b
 
-This is the github repository for Netflix and Chill, a python-based program that you can use to surf a basic SQL database for what movie you wanna watch tonight! Written with love by u/thatswhereurwrongkiddo.
+This is the Github repository for Netflix and Chill, a python-based program that you can use to surf a basic SQL database for what movie you wanna watch tonight! Written with love by u/thatswhereurwrongkiddo.
 
 Please do NOT edit any files or directories unless you know what you're doing, it could easily make the program unusable and cause you to just have a bad time.
 
