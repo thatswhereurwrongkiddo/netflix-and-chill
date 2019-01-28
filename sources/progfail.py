@@ -26,7 +26,14 @@
 #FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 #DEALINGS IN THE SOFTWARE.
 #
-#Last file update on 01.04.2019
+#Last file update on 01.21.2019
+
+'''
+progfail.py
+
+A little easter egg (?) program for when the user encounters a non-python
+error.
+'''
 
 from playsound import playsound
 import time

@@ -26,11 +26,19 @@
 #FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 #DEALINGS IN THE SOFTWARE.
 #
-#Last file update on 01.04.2019
+#Last file update on 01.21.2019
+
+'''
+release.py
+
+This program, when ran/imported, will allow you to select movies from the
+SQLite database based on release year.
+'''
 
 from splash import cursor
 import os
 import time
+import ncimports
 
 print("""How would you like to select your movie?
 
@@ -42,86 +50,58 @@ By release date after specific year (i.e. Movies released before 2010) (3)
 
 year_option = input('Type the number of your selelction: ')
 
-os.system('cls')
+ncimports.clearscreen()
 
 if year_option == ('1'):
 
-    print("""Which release year would you like to see a movie from?
-
-Options:
-
-1977
-1997
-2007
-2008
-2010
-2011
-2015
-2016
-2017
-""")
-
+    print("Which release year would you like to see a movie from?")
+    print("")
     num_year = input('Type Selection: ')
 
     sql_command = ('SELECT movie, rel_year FROM movies WHERE rel_year = "{0}"'.format(num_year))
     cursor.execute(sql_command)
-    os.system('cls')
+    ncimports.clearscreen()
     print('Loading...')
     time.sleep(1)
-    os.system('cls')
+    ncimports.clearscreen()
 
     print('Results for your search:')
     print ('')
 
-    result = cursor.fetchall()
-    for r in result:
-        print(r)
+    ncimports.fetchall()
 
-    time.sleep(1)
-    print('Continue?')
-    input('')
-    import weight
+    ncimports.stweight()
 
 elif year_option == ('2'):
 
     num_year = input('I would like to see a movie released before _____: ')
     sql_command = ('SELECT movie, rel_year FROM movies WHERE rel_year <= "{0}"'.format(num_year))
     cursor.execute(sql_command)
-    os.system('cls')
+    ncimports.clearscreen()
     print('Loading...')
     time.sleep(1)
-    os.system('cls')
+    ncimports.clearscreen()
 
     print('Results for your search:')
     print ('')
 
-    result = cursor.fetchall()
-    for r in result:
-        print(r)
+    ncimports.fetchall()
 
-    time.sleep(1)
-    print('Continue?')
-    input('')
-    import weight
+    ncimports.stweight()
 
 elif year_option == ('3'):
 
     num_year = input('I would like to see a movie released after _____: ')
     sql_command = ('SELECT movie, rel_year FROM movies WHERE rel_year >= "{0}"'.format(num_year))
     cursor.execute(sql_command)
-    os.system('cls')
+    ncimports.clearscreen()
     print('Loading...')
     time.sleep(1)
-    os.system('cls')
+    ncimports.clearscreen()
 
     print('Results for your search:')
     print ('')
 
-    result = cursor.fetchall()
-    for r in result:
-        print(r)
+    ncimports.fetchall()
 
-    time.sleep(1)
-    print('Continue?')
-    input('')
-    import weight
+    ncimports.stweight()

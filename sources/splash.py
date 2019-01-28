@@ -26,20 +26,26 @@
 #FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 #DEALINGS IN THE SOFTWARE.
 #
-#Last file update on 01.04.2019
+#Last file update on 01.21.2019
+
+'''
+splash.py
+
+Simple, and invisible to the user, but holds the entire program together. splash.py
+initializes the SQLite database connection that the entire program depends on to function.
+'''
 
 import sqlite3 as sqlite
 import os
 
-#initial screen clear for returns from weight.py
-#!!
-#should be removed after weight.py 1.1 beta fix
-#!!
-os.system('cls')
+
+os.system('cls' if os.name == 'nt' else 'clear')
 
 #begin initial SQL db connection and var initialization
 connection = sqlite.connect("deps/movie_db.db")
 #
 cursor = connection.cursor()
 #move to hello.py
-import hello
+
+if __name__ == '__main__':
+    import hello

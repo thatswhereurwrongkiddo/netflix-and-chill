@@ -1,4 +1,4 @@
-#Netflix and Chill __init__.py
+#Netflix and Chill ncimports.py
 #
 #encoded in UTF-8
 #
@@ -28,30 +28,25 @@
 #
 #Last file update on 01.21.2019
 
-#Netflix & Chill
-#version 1.2
-#
-#Program that fetches movie information from
-#a basic SQLite database of 50 movies
-#with a selection of Genre, Release Year, or IMDb rating.
-#More listings, and selection options to come soon!
-#
-#created with love by thatswhereurwrongkiddo
-#
+'''
+ncimports.py
 
-__title__ = 'Netflix & Chill'
-__author__ = 'thatswhereurwrongkiddo'
-__license__ = 'MIT'
-__copyright__ = 'Copyright 2018-2019 thatswhereurwrongkiddo'
-__version__ = '1.2'
+This file holds some basic shortcuts used all around the
+Netflix and Chill program starting in version 1.2.
+'''
 
+from splash import cursor
+import os
+import time
 
-print("Program Title: {0}".format(__title__))
-print("Author: {0}".format(__author__))
-print("License: {0}".format(__license__))
-print("Copyright info: {0}".format(__copyright__))
-print("Program Version: {0}".format(__version__))
-input()
-#that's all for now
-#thank you for reading
-#goodbye!
+def fetchall():
+    result = cursor.fetchall()
+    for r in result:
+        print(r)
+def clearscreen():
+    os.system('cls' if os.name == 'nt' else 'clear')
+def stweight():
+    time.sleep(1)
+    print('Continue?')
+    input('')
+    import weight

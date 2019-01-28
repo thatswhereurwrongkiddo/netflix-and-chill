@@ -26,50 +26,45 @@
 #FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 #DEALINGS IN THE SOFTWARE.
 #
-#Last file update on 01.04.2019
+#Last file update on 01.23.2019
+
+'''
+genre.py
+
+This program, when ran/imported, will allow you to select movies from the
+SQLite database based on genre.
+'''
 
 from splash import cursor
 import os
 import time
+import ncimports
 
 print("Which genre would you like to watch?")
 print("""
 Genre List:
 
-Action (1)
-Thriller (2)
-Drama (3)
-Fantasy (4)
-Comedy (5)
+Action
+Thriller
+Drama
+Fantasy
+Comedy
+Horror
+Adventure
 """)
-num_genre = input("Type Selection (Enter Selection Number):")
-if num_genre == ('1'):
-    real_genre = 'Action'
-elif num_genre == ('2'):
-    real_genre = 'Thriller'
-elif num_genre == ('3'):
-    real_genre = 'Drama'
-elif num_genre == ('4'):
-    real_genre = 'Fantasy'
-elif num_genre == ('5'):
-    real_genre = 'Comedy'
+real_genre = input("And you pick...?: ")
 
 
-sql_command = ('SELECT movie, genre FROM movies WHERE genre = "{0}"'.format(real_genre))
+sql_command = ('SELECT movie, genre FROM movies WHERE genre = "{0}"'.format(real_genre.capitalize()))
 cursor.execute(sql_command)
-os.system('cls')
+ncimports.clearscreen()
 print('Loading...')
 time.sleep(1)
-os.system('cls')
+ncimports.clearscreen()
 
 print('Results for your search:')
 print ('')
 
-result = cursor.fetchall()
-for r in result:
-    print(r)
+ncimports.fetchall()
 
-time.sleep(1)
-print('Continue?')
-input('')
-import weight
+ncimports.stweight()

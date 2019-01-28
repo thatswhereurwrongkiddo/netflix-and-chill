@@ -26,11 +26,19 @@
 #FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 #DEALINGS IN THE SOFTWARE.
 #
-#Last file update on 01.04.2019
+#Last file update on 01.21.2019
+
+'''
+imdb.py
+
+This program, when ran/imported, will allow you to select movies from the
+SQLite database based on IMDb rating.
+'''
 
 from splash import cursor
 import os
 import time
+import ncimports
 
 print("""How would you like to select your movie?
 
@@ -42,48 +50,38 @@ IMDb rating less than ___(2)
 
 imdb_selection = input('Type selection number: ')
 
-os.system('cls')
+ncimports.clearscreen()
 
 if imdb_selection == ('1'):
 
     num_year = input('I would like to see a movie with an IMDb rating greater than _____: ')
     sql_command = ('SELECT movie, rating FROM movies WHERE rating >= "{0}"'.format(num_year))
     cursor.execute(sql_command)
-    os.system('cls')
+    ncimports.clearscreen()
     print('Loading...')
     time.sleep(1)
-    os.system('cls')
+    ncimports.clearscreen()
 
     print('Results for your search:')
     print ('')
 
-    result = cursor.fetchall()
-    for r in result:
-        print(r)
+    ncimports.fetchall()
 
-    time.sleep(1)
-    print('Continue?')
-    input('')
-    import weight
+    ncimports.stweight()
 
 if imdb_selection == ('2'):
 
     num_year = input('I would like to see a movie with an IMDb rating less than _____: ')
     sql_command = ('SELECT movie, rating FROM movies WHERE rating <= "{0}"'.format(num_year))
     cursor.execute(sql_command)
-    os.system('cls')
+    ncimports.clearscreen()
     print('Loading...')
     time.sleep(1)
-    os.system('cls')
+    ncimports.clearscreen()
 
     print('Results for your search:')
     print ('')
 
-    result = cursor.fetchall()
-    for r in result:
-        print(r)
+    ncimports.fetchall()
 
-    time.sleep(1)
-    print('Continue?')
-    input('')
-    import weight
+    ncimports.stweight()

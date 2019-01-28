@@ -1,4 +1,4 @@
-#Netflix and Chill __init__.py
+#Netflix and Chill on_netflix.py
 #
 #encoded in UTF-8
 #
@@ -26,32 +26,47 @@
 #FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 #DEALINGS IN THE SOFTWARE.
 #
-#Last file update on 01.21.2019
+#Last file update on 01.23.2019
 
-#Netflix & Chill
-#version 1.2
-#
-#Program that fetches movie information from
-#a basic SQLite database of 50 movies
-#with a selection of Genre, Release Year, or IMDb rating.
-#More listings, and selection options to come soon!
-#
-#created with love by thatswhereurwrongkiddo
-#
+##FIX IMPORT LOOP
 
-__title__ = 'Netflix & Chill'
-__author__ = 'thatswhereurwrongkiddo'
-__license__ = 'MIT'
-__copyright__ = 'Copyright 2018-2019 thatswhereurwrongkiddo'
-__version__ = '1.2'
+import ncimports
+import os
+import time
+from splash import cursor
+
+print("""So you wanna see if your movie is on Netflix?
+Well, you've come to the right place!
+""")
+net_movie = input("Type the name of the movie you would like to check: ")
+
+ncimports.clearscreen()
+
+sql_command = ("SELECT movie, on_netflix FROM movies WHERE movie='{0}'".format(net_movie.title()))
+cursor.execute(sql_command)
+ncimports.clearscreen()
+print('Loading...')
+time.sleep(1)
+ncimports.clearscreen()
+
+print('Results for your search:')
+print ('')
+
+ncimports.fetchall()
+
+input("Continue?")
 
 
-print("Program Title: {0}".format(__title__))
-print("Author: {0}".format(__author__))
-print("License: {0}".format(__license__))
-print("Copyright info: {0}".format(__copyright__))
-print("Program Version: {0}".format(__version__))
-input()
-#that's all for now
-#thank you for reading
-#goodbye!
+#weight.py rewrite for on_netflix
+#because weight.py prompts user to on_netflix
+ncimports.clearscreen()
+print('Would you like to perform another search? (Y/N)')
+yesno = input('')
+
+#if/else statement on whether to restart or terminate program
+if yesno.upper() == ('Y'):
+    os.system('python splash.py')
+elif yesno.upper() == ('N'):
+    os.system('cls' if os.name == 'nt' else 'clear')
+    print('Goodbye! See you next time!')
+    time.sleep(1.5)
