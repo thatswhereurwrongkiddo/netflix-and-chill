@@ -26,7 +26,7 @@
 #FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 #DEALINGS IN THE SOFTWARE.
 #
-#Last file update on 01.23.2019
+#Last file update on 02.03.2019
 
 '''
 genre.py
@@ -65,6 +65,6 @@ ncimports.clearscreen()
 print('Results for your search:')
 print ('')
 
-ncimports.fetchall()
+ncimports.fa_genre()
 
 ncimports.stweight()

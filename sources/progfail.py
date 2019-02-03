@@ -26,7 +26,7 @@
 #FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 #DEALINGS IN THE SOFTWARE.
 #
-#Last file update on 01.21.2019
+#Last file update on 02.03.2019
 
 '''
 progfail.py
@@ -43,4 +43,4 @@ time.sleep(0.5)
 print('Damn it, Desmond')
 time.sleep(0.5)
 print('')
-playsound('deps/sys_fail.wav')
+playsound('../deps/sys_fail.wav')

@@ -26,7 +26,7 @@
 #FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 #DEALINGS IN THE SOFTWARE.
 #
-#Last file update on 01.21.2019
+#Last file update on 02.03.2019
 
 '''
 ncimports.py
@@ -42,11 +42,16 @@ import time
 def fetchall():
     result = cursor.fetchall()
     for r in result:
-        print(r)
+        print(r[0], "({0})".format(r[1]))
+def fa_genre():
+    result = cursor.fetchall()
+    for r in result:
+        print(r[0])
 def clearscreen():
     os.system('cls' if os.name == 'nt' else 'clear')
 def stweight():
     time.sleep(1)
+    print("")
     print('Continue?')
     input('')
     import weight

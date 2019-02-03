@@ -26,7 +26,7 @@
 #FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 #DEALINGS IN THE SOFTWARE.
 #
-#Last file update on 01.21.2019
+#Last file update on 02.03.2019
 
 '''
 splash.py
@@ -42,7 +42,7 @@ import os
 os.system('cls' if os.name == 'nt' else 'clear')
 
 #begin initial SQL db connection and var initialization
-connection = sqlite.connect("deps/movie_db.db")
+connection = sqlite.connect("../deps/movie_db.db")
 #
 cursor = connection.cursor()
 #move to hello.py

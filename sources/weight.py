@@ -26,7 +26,7 @@
 #FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 #DEALINGS IN THE SOFTWARE.
 #
-#Last file update on 01.23.2019
+#Last file update on 02.03.2019
 #
 #do you want to start the game again?
 #i'm listening to WEIGHT while coding this right now
@@ -74,3 +74,4 @@ while runprog == 0:
         os.system('cls' if os.name == 'nt' else 'clear')
         print('Goodbye! See you next time!')
         time.sleep(1.5)
+        break
