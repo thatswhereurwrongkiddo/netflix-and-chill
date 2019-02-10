@@ -1,2 +1,0 @@
-INSERT INTO movies (num, movie, genre, rel_year, rating, on_netflix)
-VALUES (0, '', '', 0, 0, '')
