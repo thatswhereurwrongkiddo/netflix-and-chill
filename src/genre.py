@@ -51,8 +51,6 @@ Thriller
 Drama
 Fantasy
 Comedy
-Horror
-Adventure
 """)
 real_genre = input("And you pick...?: ")
 
