@@ -26,7 +26,7 @@
 #FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 #DEALINGS IN THE SOFTWARE.
 #
-#Last file update on 01.21.2019
+#Last file update on 02.10.2019
 
 '''
 hello.py
@@ -36,7 +36,7 @@ This is the initial page the user (you!) sees when starting the program, and
 redirects the user to the other parts of the Netflix and Chill program.
 '''
 
-#import modules
+#imports required modules
 import os
 from splash import cursor
 import time

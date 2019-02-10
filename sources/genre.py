@@ -26,7 +26,7 @@
 #FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 #DEALINGS IN THE SOFTWARE.
 #
-#Last file update on 02.03.2019
+#Last file update on 02.10.2019
 
 '''
 genre.py
@@ -35,11 +35,13 @@ This program, when ran/imported, will allow you to select movies from the
 SQLite database based on genre.
 '''
 
+#import required modules
 from splash import cursor
 import os
 import time
 import ncimports
 
+#ask user for input on genre selection
 print("Which genre would you like to watch?")
 print("""
 Genre List:
@@ -54,9 +56,11 @@ Adventure
 """)
 real_genre = input("And you pick...?: ")
 
-
+#initialize SQL command with user ionput
 sql_command = ('SELECT movie, genre FROM movies WHERE genre = "{0}"'.format(real_genre.capitalize()))
+#execute SQL command
 cursor.execute(sql_command)
+#clear screeen and return results for given command
 ncimports.clearscreen()
 print('Loading...')
 time.sleep(1)
@@ -67,4 +71,5 @@ print ('')
 
 ncimports.fa_genre()
 
+#start weight.py
 ncimports.stweight()
