@@ -58,11 +58,9 @@ Designed with love by github user thatswhereurwrongkiddo
 #i had to make this due to macOS technically being Darwin OS,
 #and identifying itself as such when using the traditional
 #platform.###() modules
-if platsys == "Darwin":                                          ##############################################
-    macosv = os.system("/usr/bin/sw_vers")                       # not 100% sure how well this works on macOS #
-    print("Running on macOS {0}".format(macosv))                 ########### if it even works at all ##########
-                                                                 ##### i promise i'll have it tested soon #####
-                                                                 ##############################################
+if platsys == "Darwin":
+    macosv = os.system("/usr/bin/sw_vers | grep ProductVersion | cut -f2")
+    print("Running on macOS {0}".format(macosv))                                                          
 if platsys == "Linux":
     lin_dist = "{0} {1}".format(platdist[0], platdist[1])
     print("Running on {0} (Linux)".format(lin_dist))
