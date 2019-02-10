@@ -28,8 +28,6 @@
 #
 #Last file update on 01.23.2019
 
-##FIX IMPORT LOOP
-
 import ncimports
 import os
 import time
