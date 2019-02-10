@@ -31,7 +31,7 @@
 #do you want to start the game again?
 #i'm listening to WEIGHT while coding this right now
 #probably not a good song choice bc i keep getting distracted and singing
-#but fuck it
+#but whatever
 
 '''
 weight.py
