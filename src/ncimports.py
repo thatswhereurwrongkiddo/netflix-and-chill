@@ -42,8 +42,8 @@ import time
 #shorcut for result fetching in imdb.py and release.py
 def fetchall():
     result = cursor.fetchall()
-    result0 = result[0]
-    print(result0[0], "({0})".format(result0[1]))
+    for r in result:
+        print(r[0], "({0})".format(r[1]))
 #shortcut for result fetching in on_netflix.py
 def fa_onnet():
     result = cursor.fetchall()
