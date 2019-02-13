@@ -42,17 +42,17 @@ import time
 #shorcut for result fetching in imdb.py and release.py
 def fetchall():
     result = cursor.fetchall()
-    for r in result:
-        print(r[0], "({0})".format(r[1]))
+    result0 = result[0]
+    print(result0[0], "({0})".format(result0[1]))
 #shortcut for result fetching in on_netflix.py
 def fa_onnet():
     result = cursor.fetchall()
-    for r in result:
-        if r[1] == "True":
-            print("{0} is on Netflix!".format(r[0]))
-            print("")
-        if r[1] == "False":
-            print("{0} is not on Netflix. :(".format(r[0]))
+    result0 = result[0]
+    if result0[1] == "True":
+        print("{0} is on Netflix!".format(result0[0]))
+        print("")
+    if result0[1] == "False":
+        print("{0} is not on Netflix. :(".format(result0[0]))
 #shortcut for result fetching in genre.py
 def fa_genre():
     result = cursor.fetchall()

@@ -40,7 +40,7 @@ net_movie = input("Type the name of the movie you would like to check: ")
 
 ncimports.clearscreen()
 
-sql_command = ("SELECT movie, on_netflix FROM movies WHERE movie='{0}'".format(net_movie.title()))
+sql_command = ("SELECT movie, on_netflix FROM movies WHERE movie='{0}'".format(net_movie))
 cursor.execute(sql_command)
 ncimports.clearscreen()
 print('Loading...')
