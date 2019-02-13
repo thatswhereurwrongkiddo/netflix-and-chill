@@ -68,3 +68,32 @@ def stweight():
     print('Continue?')
     input('')
     import weight
+#i made this fix after realizing that movies like BASEketball
+#didn't play nice with my original on_netflix setup
+#it took me hours
+#but i finally did it
+def baseketballfix():
+    net_movie = input("Type the name of the movie you would like to check: ")
+    execute = cursor.execute("SELECT movie FROM movies")
+    fetchall = cursor.fetchall()
+    x=0
+    while x < 21:
+        if fetchall[x][0].lower() == net_movie:
+            realmovie = fetchall[x][0]
+            break
+        else:
+            x = x+1
+            pass
+    clearscreen()
+
+    sql_command = ("SELECT movie, on_netflix FROM movies WHERE movie='{0}'".format(realmovie))
+    cursor.execute(sql_command)
+    clearscreen()
+    print('Loading...')
+    time.sleep(1)
+    clearscreen()
+
+    print('Results for your search:')
+    print ('')
+
+    fa_onnet()

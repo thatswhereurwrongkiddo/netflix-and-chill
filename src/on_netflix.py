@@ -36,21 +36,7 @@ from splash import cursor
 print("""So you wanna see if your movie is on Netflix?
 Well, you've come to the right place!
 """)
-net_movie = input("Type the name of the movie you would like to check: ")
-
-ncimports.clearscreen()
-
-sql_command = ("SELECT movie, on_netflix FROM movies WHERE movie='{0}'".format(net_movie))
-cursor.execute(sql_command)
-ncimports.clearscreen()
-print('Loading...')
-time.sleep(1)
-ncimports.clearscreen()
-
-print('Results for your search:')
-print ('')
-
-ncimports.fa_onnet()
+ncimports.baseketballfix()
 
 input("Continue?")
 
