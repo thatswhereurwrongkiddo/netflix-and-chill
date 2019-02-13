@@ -1,3 +1,4 @@
+#!/usr/bin/env python -W ignore::DeprecationWarning
 #Netflix and Chill hello.py
 #
 #encoded in UTF-8
