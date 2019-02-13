@@ -68,9 +68,9 @@ else:
     print("Running on {0} {1}".format(platsys, platrel))
 
 #ask user which way they would like to select movie
-#genre -> genre.py -> weight.py
-#release year -> release.py -> weight.py
-#imdb rating -> imdb.py -> weight.py
+#genre -> genre.py
+#release year -> release.py
+#imdb rating -> imdb.py
 print("""
 How would you like to select your movie?
 
