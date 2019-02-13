@@ -42,22 +42,31 @@ import time
 #shorcut for result fetching in imdb.py and release.py
 def fetchall():
     result = cursor.fetchall()
-    for r in result:
-        print(r[0], "({0})".format(r[1]))
+    if result == []:
+        print("No Results Found :(")
+    else:
+        for r in result:
+            print(r[0], "({0})".format(r[1]))
 #shortcut for result fetching in on_netflix.py
 def fa_onnet():
     result = cursor.fetchall()
     result0 = result[0]
-    if result0[1] == "True":
-        print("{0} is on Netflix!".format(result0[0]))
-        print("")
-    if result0[1] == "False":
-        print("{0} is not on Netflix. :(".format(result0[0]))
+    if result == []:
+        print("No Results Found :(")
+    else:
+        if result0[1] == "True":
+            print("{0} is on Netflix!".format(result0[0]))
+            print("")
+        elif result0[1] == "False":
+            print("{0} is not on Netflix. :(".format(result0[0]))
 #shortcut for result fetching in genre.py
 def fa_genre():
     result = cursor.fetchall()
-    for r in result:
-        print(r[0])
+    if result == []:
+        print("No Results Found :(")
+    else:
+        for r in result:
+            print(r[0])
 #shortcut for clearing terminal screen via os.system() module
 def clearscreen():
     os.system('cls' if os.name == 'nt' else 'clear')
