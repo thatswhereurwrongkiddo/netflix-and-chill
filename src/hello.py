@@ -60,7 +60,7 @@ Designed with love by github user thatswhereurwrongkiddo
 #platform.###() modules
 if platsys == "Darwin":
     macosv = os.system("/usr/bin/sw_vers | grep ProductVersion | cut -f2")
-    print("Running on macOS {0}".format(macosv))                                                          
+    print("Running on macOS {0}".format(macosv))
 if platsys == "Linux":
     lin_dist = "{0} {1}".format(platdist[0], platdist[1])
     print("Running on {0} (Linux)".format(lin_dist))
@@ -76,9 +76,9 @@ How would you like to select your movie?
 
 Options are:
 
-Genre
-Release Year
-IMDb Rating
+(1) Genre
+(2) Release Year
+(3) IMDb Rating
 
 """)
 db_selection = input('And you pick...?: ')
@@ -86,11 +86,11 @@ db_selection = input('And you pick...?: ')
 ncimports.clearscreen()
 
 #if/else statement sending user to selection of their choice
-if db_selection.lower() == ('genre'):
+if db_selection.lower() == ('genre') or db_selection == ("1"):
     import genre
-elif db_selection.lower() == ('release year'):
+elif db_selection.lower() == ('release year') or db_selection == ("2"):
     import release
-elif db_selection.lower() == ('imdb rating'):
+elif db_selection.lower() == ('imdb rating') or db_selection == ("3"):
     import imdb
 else:
     import progfail
