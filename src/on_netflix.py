@@ -50,7 +50,7 @@ ncimports.clearscreen()
 print('Results for your search:')
 print ('')
 
-ncimports.fetchall()
+ncimports.fa_onnet()
 
 input("Continue?")
 

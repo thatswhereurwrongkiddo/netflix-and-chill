@@ -45,7 +45,7 @@ def fetchall():
     for r in result:
         print(r[0], "({0})".format(r[1]))
 #shortcut for result fetching in on_netflix.py
-def fetchall():
+def fa_onnet():
     result = cursor.fetchall()
     for r in result:
         if r[1] == "True":
