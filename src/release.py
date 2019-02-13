@@ -43,8 +43,8 @@ import ncimports
 print("""How would you like to select your movie?
 
 By specific release year? (1)
-By release date before specific year (i.e. Movies released after 2010) (2)
-By release date after specific year (i.e. Movies released before 2010) (3)
+By release date before specific year (2)
+By release date after specific year (3)
 
 """)
 

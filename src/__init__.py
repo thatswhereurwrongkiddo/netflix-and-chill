@@ -32,7 +32,7 @@
 #version 1.2
 #
 #Program that fetches movie information from
-#a basic SQLite database of 50 movies
+#a basic SQLite database of 20 movies
 #with a selection of Genre, Release Year, or IMDb rating.
 #More listings, and selection options to come soon!
 #
