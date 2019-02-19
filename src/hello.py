@@ -64,7 +64,12 @@ if platsys == "Darwin":
     print("Running on macOS {0}".format(macosv))
 if platsys == "Linux":
     lin_dist = "{0} {1}".format(platdist[0], platdist[1])
-    print("Running on {0} (Linux)".format(lin_dist))
+    if platdist[0] == "arch":
+        print("Running on your custom built archLinux!")
+        print("Congrats on getting arch installed pal! :)")
+    #if platdist[0] == ""
+    else:
+        print("Running on {0} (Linux)".format(lin_dist))
 else:
     print("Running on {0} {1}".format(platsys, platrel))
 
