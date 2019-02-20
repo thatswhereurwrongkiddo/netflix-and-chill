@@ -11,15 +11,21 @@ Running Netflix and Chill
 ----
 
 Windows:
+
 -Double-click "nacLoad_win.bat" to open nacLoad_win 0.1
+
 -You will be presented with an option to start Netflix and Chill, and an option to quit.
 
 Linux/macOS:
+
 -Open Terminal
+
 -paste this command
+
 ```
 cd /path/to/netflix-and-chill && bash nacLoad
 ```
+
 -nacLoad 0.1 will load as GUI option-based menu with similar options as nacLoad_win
 
 (I promise I'm working on a better way to do this, but this will need to do for right now)
