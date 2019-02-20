@@ -35,12 +35,19 @@ A little easter egg (?) program for when the user encounters a non-python
 error.
 '''
 
-from playsound import playsound
+import pygame
 import time
+import ncimports
 
+ncimports.clearscreen()
 print('System Failure')
 time.sleep(0.5)
 print('Damn it, Desmond')
 time.sleep(0.5)
 print('')
-playsound('../deps/sys_fail.wav')
+pygame.init()
+
+pygame.mixer.music.load("../deps/sys_fail.wav")
+
+pygame.mixer.music.play()
+time.sleep(7)
