@@ -60,7 +60,11 @@ Designed with love by github user thatswhereurwrongkiddo
 #platform.###() modules
 if platsys == "Darwin":
     macosv = os.system("/usr/bin/sw_vers | grep ProductVersion | cut -f2")
+<<<<<<< HEAD
     print("Running on macOS {0}".format(macosv))
+=======
+    print("Running on macOS {0}".format(macosv))                                                          
+>>>>>>> 34dcace19e5301e81506f1b20698b1cb5512a84b
 if platsys == "Linux":
     lin_dist = "{0} {1}".format(platdist[0], platdist[1])
     print("Running on {0} (Linux)".format(lin_dist))
