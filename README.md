@@ -8,7 +8,7 @@ This program is licensed under the MIT License, so if you do know what you're do
 
 ---
 Running Netflix and Chill
-===
+----
 
 Windows:
 -Double-click "nacLoad_win.bat" to open nacLoad_win 0.1
