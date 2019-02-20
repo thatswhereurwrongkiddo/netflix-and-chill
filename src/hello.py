@@ -50,7 +50,7 @@ platrel = platform.release()
 platdist = platform.dist()
 
 #print intro screen
-print("""Welcome to Netflix and Chill v1.2
+print("""Welcome to Netflix and Chill v1.2.1
 
 Designed with love by github user thatswhereurwrongkiddo
 """)
@@ -67,7 +67,6 @@ if platsys == "Linux":
     if platdist[0] == "arch":
         print("Running on your custom built archLinux!")
         print("Congrats on getting arch installed pal! :)")
-    #if platdist[0] == ""
     else:
         print("Running on {0} (Linux)".format(lin_dist))
 else:

@@ -26,10 +26,10 @@
 #FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 #DEALINGS IN THE SOFTWARE.
 #
-#Last file update on 01.21.2019
+#Last file update on 02.20.2019
 
 #Netflix & Chill
-#version 1.2
+#version 1.2.1
 #
 #Program that fetches movie information from
 #a basic SQLite database of 20 movies
@@ -43,7 +43,7 @@ __title__ = 'Netflix & Chill'
 __author__ = 'thatswhereurwrongkiddo'
 __license__ = 'MIT'
 __copyright__ = 'Copyright 2018-2019 thatswhereurwrongkiddo'
-__version__ = '1.2'
+__version__ = '1.2.1'
 
 
 print("Program Title: {0}".format(__title__))
