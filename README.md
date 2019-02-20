@@ -7,10 +7,27 @@ Please do NOT edit any files or directories unless you know what you're doing, i
 This program is licensed under the MIT License, so if you do know what you're doing, feel completely free to mess around with whatever you want to. After all, the files are yours after you download them, just please, for the love of god, if you republish it, just credit me, that's all I ask. Not too hard, right?
 
 ---
+Installing Netflix and Chill
+----
+First, open up your terminal or Command Prompt (for you Windows users), and navigate to the
+directory you would like to install Netflix and Chill in:
+```
+cd /installation/path
+```
+Next, type this command:
+```
+git clone https://github.com/thatswhereurwrongkiddo/netflix-and-chill.git
+```
+And now Netflix and Chill is on your system!
+
+---
+
 Running Netflix and Chill
 ----
 
 Windows:
+
+-Open netflix-and-chill in your install path
 
 -Double-click "nacLoad_win.bat" to open nacLoad_win 0.1
 
