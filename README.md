@@ -7,7 +7,8 @@ Please do NOT edit any files or directories unless you know what you're doing, i
 This program is licensed under the MIT License, so if you do know what you're doing, feel completely free to mess around with whatever you want to. After all, the files are yours after you download them, just please, for the love of god, if you republish it, just credit me, that's all I ask. Not too hard, right?
 
 ---
-##Running Netflix and Chill
+Running Netflix and Chill
+===
 
 Windows:
 -Double-click "nacLoad_win.bat" to open nacLoad_win 0.1
@@ -23,4 +24,4 @@ cd /path/to/netflix-and-chill && bash nacLoad
 
 (I promise I'm working on a better way to do this, but this will need to do for right now)
 
-###Have fun, and enjoy movie night!
+Have fun, and enjoy movie night!
