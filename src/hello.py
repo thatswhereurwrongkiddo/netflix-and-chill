@@ -48,7 +48,7 @@ import ncimports
 platsys = platform.system()
 platrel = platform.release()
 platdist = platform.dist()
-osname = os.name()
+osname = os.name
 
 #print intro screen
 print("""Welcome to Netflix and Chill v1.2.1
