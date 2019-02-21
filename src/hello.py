@@ -48,6 +48,7 @@ import ncimports
 platsys = platform.system()
 platrel = platform.release()
 platdist = platform.dist()
+osname = os.name()
 
 #print intro screen
 print("""Welcome to Netflix and Chill v1.2.1
@@ -69,7 +70,7 @@ if platsys == "Linux":
         print("Congrats on getting arch installed pal! :)")
     else:
         print("Running on {0} (Linux)".format(lin_dist))
-elif os.name() == "nt":
+elif osname == "nt":
     print("Running on {0} {1}".format(platsys, platrel))
 
 #ask user which way they would like to select movie
