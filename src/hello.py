@@ -69,7 +69,7 @@ if platsys == "Linux":
         print("Congrats on getting arch installed pal! :)")
     else:
         print("Running on {0} (Linux)".format(lin_dist))
-else:
+elif os.name() == "nt":
     print("Running on {0} {1}".format(platsys, platrel))
 
 #ask user which way they would like to select movie
